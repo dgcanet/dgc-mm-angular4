@@ -1,0 +1,38 @@
+<table class="order-table cart-table table table-responsive table-sm table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Pizza Order(s)</th>
+        <th>Qty.</th>
+        <th>Total</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cartItem of cartItems" (mouseenter)="onRowSelect(cartItem.id)" >
+        <th scope="row">{{cartItem?.id}}</th>
+        <td>
+            <div class="card card-outline-success mb-3">
+                <div class="card-block">
+                  <h4 class="card-title">{{cartItem.name}}</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">{{cartItem.description}}</h6>
+                  <p class="card-text">{{cartItem.size}} inches</p>
+                  <span>$</span><span>{{cartItem.price}}</span>
+                </div>
+              </div>
+        </td>
+        <td>
+          <input type="text" class="form-control col-sm-4" #quantityInput="ngModel" [(ngModel)]="cartItem.quantity" (change)="onQuantityChange(quantityInput.value, cartItem)" />
+        </td>
+        <td>
+          <div [(textContent)]="cartItem.totalPrice">}</div>
+        </td>
+        <td>
+          <button mat-button mat-fab id="cartItem?.id" (click)="openDialog()"><i class="fa fa-trash"></i></button>
+        </td>
+      </tr>
+      <tr [ngClass]="(cartItems.length <= 0) ? 'is-visible' : 'is-not-visible'">
+        <td>No Order(s) Available</td>
+      </tr>
+    </tbody>
+</table>

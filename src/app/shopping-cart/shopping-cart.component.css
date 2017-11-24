@@ -1,0 +1,10 @@
+.shopping-cart-title{
+    text-align: center;
+}
+
+.is-visible{
+    display: block;
+}
+.is-not-visible {
+    display: none;
+}

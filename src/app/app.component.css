@@ -1,0 +1,15 @@
+.main-content{
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main-container{
+    background-color: antiquewhite;
+    padding-bottom: 60px;
+}
+
+mat-dialog-container {
+    display: none!important;
+    padding: 0px!important;    
+}

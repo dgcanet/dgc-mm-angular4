@@ -1,0 +1,85 @@
+ <table class="summary-table table table-responsive table-sm">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Pizza Order(s)</th>
+        <th>Qty.</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let summaryItem of summaryItems"  >
+        <th scope="row">{{summaryItem?.id}}</th>
+        <td>
+            <div class="card card-outline-success mb-3">
+                <div class="card-block">
+                  <h4 class="card-title">{{summaryItem.name}}</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">{{summaryItem.description}}</h6>
+                  <p class="card-text">{{summaryItem.size}} inches</p>
+                  <span>$</span><span>{{summaryItem.price}}</span>
+                </div>
+              </div>
+        </td>
+        <td>
+          <div>{{ summaryItem.quantity }}</div>
+        </td>
+        <td>
+          <div>{{ summaryItem.totalPrice }}</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+ <div >
+      <div>
+      <div class="form-row">
+          <div class="col-sm-6">
+                  <label labelValue="First Name" for="summaryFirstName"></label>
+                  <input type="text" readonly class="form-control" id="summaryFirstName" type="text" name="summaryFirstName"  [(ngModel)]="customer.firstname" #summaryFirstname="ngModel">
+           
+          </div>
+          <div class="col-sm-6">
+     
+                  <label labelValue="Last Name" for="lastname"></label>
+                  <input type="text" readonly  class="form-control" id="summaryLastName" name="summaryLastName" [(ngModel)]="customer.lastname" #summaryLastName="ngModel">
+         
+          </div>
+      </div>
+      </div>
+      <div>
+          <div class="form-row">
+                  <div class="col-sm-6">
+                
+                          <label labelValue="Address" for="summaryStreet"></label>
+                          <input type="text" readonly class="form-control" id="summaryStreet" name="summaryStreet"  [(ngModel)]="customer.address.street" #summaryStreet="ngModel">
+                  </div>
+                  <div class="col-sm-4">
+               
+                          <label labelValue="City" for="summaryDeliveryAddress"></label>
+                          <input type="text" readonly class="form-control" id="summaryDeliveryAddress" name="summaryDeliveryAddress" [(ngModel)]="customer.address.city" #summaryDeliveryAddress="ngModel">
+                          
+                  </div>    
+                  <div class="col-sm-2">
+                          <label labelValue="ZIP" for="summaryZip"></label>
+                          <input  type="text" readonly name="summaryZip" class="form-control" [(ngModel)]="customer.address.zip" #zip="ngModel" id="summaryZip" >
+                  </div>
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="col-sm-12">
+      
+                  <label labelValue="Email Address" for="summaryEmailAddress"></label>
+                  <input  type="text" readonly  class="form-control" id="summaryEmailAddress" name="summaryEmailAddress" [(ngModel)]="customer.email" #summaryEmailAddress="ngModel">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="col-sm-12">
+     
+                  <label labelValue="Contact Number" for="summaryContactNumber"></label>
+                  <input type="text" readonly class="form-control phone" id="summaryContactNumber" name="summaryContactNumber" [(ngModel)]="customer.contactnumber" #summaryContactNumber="ngModel">
+          </div>
+      </div>
+  </div>    
+
+  <div>Order has been made! Kindly check your email for the order info</div>

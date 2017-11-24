@@ -1,0 +1,19 @@
+.is-visible{
+    display: block;
+}
+.is-not-visible {
+    display: none;
+}
+
+.order-table{
+    display: table!important;
+}
+
+.order-table thead th{
+    border-bottom: 1px solid black!important;
+    border-top: 1px solid black!important;
+}
+
+.card-block, input{
+    background-color: ivory;
+}

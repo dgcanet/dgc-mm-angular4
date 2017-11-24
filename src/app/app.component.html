@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="main-container">
+  <app-header></app-header>
+  <div class="main-content row  container-fluid no-gutters mh-90">
+      <div class="menu-container col-md-6">
+          <app-menu (addOrder)="addOrder($event)"></app-menu>
+      </div>
+      <div class="order-container col-md-6">
+          <app-shopping-cart></app-shopping-cart>
+      </div>
+  </div>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "QC",
+        "code": "QC100PH"
+    },
+    {
+        "id": 2,
+        "name": "San Mateo",
+        "code": "SM158PH"
+    },
+    {
+        "id": 3,
+        "name": "Malabon",
+        "code": "MB147PH"
+    }
+]

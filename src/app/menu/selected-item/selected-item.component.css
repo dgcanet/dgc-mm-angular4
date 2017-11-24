@@ -1,0 +1,14 @@
+.selected-item-container {
+
+}
+
+.ingredients{
+    padding: 15px;
+}
+.pizza-img {
+    max-width: 270px;
+}
+.ingredients .list-group-item{
+    background-color: ivory!important;
+    color:black!important;
+}

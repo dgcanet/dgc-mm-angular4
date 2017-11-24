@@ -1,0 +1,18 @@
+.menu-items{
+    
+}
+
+.menu-items a{
+    margin: 15px;
+    text-align: center;
+}
+
+.menu-items .list-group-item{
+    background-color: ivory!important;
+    color:black!important;
+}
+
+.size-container
+{
+    margin: 15px;
+}

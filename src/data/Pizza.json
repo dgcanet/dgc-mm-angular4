@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Pepperoni",
+        "price": 800,
+        "ingredients": [7,8],
+        "size": 9,
+        "photo": "http://slice.seriouseats.com/images/20100201-delivery-dominos.jpg"
+    },
+    {
+      "id": 2,
+      "name": "BBQ",
+      "price": 810,
+      "ingredients": [9,4,8,11],
+      "size": 9,
+      "photo": "http://lifemadesimplebakes.com/wp-content/uploads/2016/07/Hawaiian-BBQ-Pizza.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Hawaiian",
+        "price": 815,
+        "ingredients": [1,2,3,4,6],
+        "size": 9,
+        "photo": "http://hartsgrovepizza.com/wp-content/uploads/2016/01/Hawaiian-Pizza.png"
+    },
+    {
+        "id": 4,
+        "name": "Bacon Ranch",
+        "price": 820,
+        "ingredients": [6,8,11],
+        "size": 9,
+        "photo": "https://www.julieseatsandtreats.com/wp-content/uploads/2017/06/Chicken-Bacon-Ranch-Pizza-Landscape.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Chicken BBQ",
+        "price": 825,
+        "ingredients": [9,5,8],
+        "size": 9,
+        "photo": "http://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/2/28/1/FNM_040112-Copy-That-002_s4x3.jpg.rend.hgtvcom.406.305.suffix/1382541346030.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Four Cheese",
+        "price": 830,
+        "ingredients": [8,8,8,8],
+        "size": 9,
+        "photo": "http://schwans.web.products.s3.amazonaws.com/73140.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Garden Special",
+        "price": 835,
+        "ingredients": [4,12,8],
+        "size": 9,
+        "photo": "https://images.summitmedia-digital.com/spotph/images/papa-johns-unli-pizza-friday.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Texas Heat",
+        "price": 840,
+        "ingredients": [8, 10, 4],
+        "size": 9,
+        "photo": "http://papajohns.com.ph/wp-content/uploads/2016/08/TexasHeat.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Bicol Express",
+        "price": 845,
+        "ingredients": [13,4,10,12],
+        "size": 9,
+        "photo": "http://tourism-philippines.com/images/camarines-sur5.jpg"
+    }
+  ]

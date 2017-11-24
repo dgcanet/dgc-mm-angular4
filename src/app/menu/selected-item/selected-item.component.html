@@ -1,0 +1,14 @@
+<div class="selected-item-container row no-gutter">
+    <div class="col-md-6"> {{ shownPizza?.name }} </div>
+    <div class="col-md-6"> {{ shownPizza?.price }} </div>
+</div>
+<div class="row no-gutter">
+  <div class="col-md-6">
+    <ul class="ingredients list-group" *ngIf="shownPizza">
+      <li *ngFor="let ingredientId of shownPizza?.ingredients" class="list-group-item">{{ getIngredientName(ingredientId) }}</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <img class="pizza-img img-responsive" [src]="shownPizza?.photo">
+  </div>
+</div>

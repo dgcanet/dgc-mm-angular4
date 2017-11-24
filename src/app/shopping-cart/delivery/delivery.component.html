@@ -1,0 +1,71 @@
+<form #deliveryForm="ngForm" (ngSubmit)="onOrder(deliveryForm)" novalidate>
+    <div class="delivery-container">
+        <div class="form-row">
+            <mat-form-field class="col-sm-6">
+                <input matInput type="text" required  id="firstname" type="text" name="firstname" placeholder="First Name" [(ngModel)]="customer.firstname" #firstname="ngModel" >
+                <mat-error *ngIf="deliveryForm.submitted && firstname.errors?.required">
+                  <small>first name is required</small>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="col-sm-6">
+                <input matInput ype="text" required id="lastname" name="lastname" placeholder="Last Name" [(ngModel)]="customer.lastname" #lastname="ngModel" >
+                <mat-error *ngIf="deliveryForm.submitted && lastname.errors?.required">
+                    <small>last name is required</small>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-row">
+                <mat-form-field class="col-sm-6">
+                    <input matInput type="text" pattern="^([0-9]+\s)+(\w|\W)*$" required id="street" name="street" placeholder="Street" [(ngModel)]="customer.address.street" #street="ngModel" >
+                    <mat-error *ngIf="deliveryForm.submitted && street.errors?.required">
+                        <small>street is required</small>
+                    </mat-error>
+                    <mat-error *ngIf="deliveryForm.submitted && street.errors?.pattern">
+                        <small>invalid street format</small>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field class="col-sm-4">
+                        <input matInput  type="text" required  id="city" name="city" placeholder="City" [(ngModel)]="customer.address.city" #city="ngModel" >
+                        <mat-error  *ngIf="deliveryForm.submitted && city.errors?.required">
+                            <small>city is required</small>
+                        </mat-error>
+                </mat-form-field>  
+                <mat-form-field class="col-sm-2">
+                        <input matInput  type="text" name="zip" class="zip" validZip="ngModel" [(ngModel)]="customer.address.zip" #zip="ngModel" id="zip" placeholder="Zip Code" >
+                        <mat-error  *ngIf="deliveryForm.submitted && zip.errors?.invalidZip">
+                            <small>invalid zip code</small>
+                        </mat-error>
+                </mat-form-field> 
+        </div>
+        <div class="form-row">
+                <mat-form-field class="col-sm-12">
+                        <input matInput  type="text" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"  id="emailAddress" name="email" placeholder="Email" [(ngModel)]="customer.email" #email="ngModel" >
+                        <mat-error  *ngIf="deliveryForm.submitted && email.errors?.required">
+                            <small>email is required</small>
+                        </mat-error>
+                        <mat-error *ngIf="deliveryForm.submitted && email.errors?.pattern">
+                                <small>invalid email format</small>
+                        </mat-error>
+                </mat-form-field> 
+        </div>
+        <div class="form-row">
+            <mat-form-field class="col-sm-12">
+                    <input matInput  type="text" class="phone" validPhone="ngModel" id="contactNumber" name="contactnumber" placeholder="Phone Number" [(ngModel)]="customer.contactnumber" #contactnumber="ngModel" >
+                    <mat-error *ngIf="deliveryForm.submitted && contactnumber.errors?.invalidPhone">
+                        <small>invalid phone number</small>
+                    </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-row">
+            <div class="col-sm-12">
+                <button mat-button mat-raised-button type="submit" class="order-btn" ><span class="fa fa-check"></span> Order Now</button>
+            </div>
+        </div>
+    </div>    
+</form>
+
+<!--
+<pre>
+    {{ deliveryForm.value | json }}
+</pre>
+-->

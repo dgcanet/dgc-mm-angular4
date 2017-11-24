@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Regular",
+        "size": 9
+    },
+    {
+        "name": "Family",
+        "size": 12
+    },
+    {
+        "name": "Party",
+        "size": 14
+    }
+]

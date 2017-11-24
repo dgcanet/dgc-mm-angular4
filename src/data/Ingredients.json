@@ -1,0 +1,55 @@
+[
+    {
+      "id": 1,
+      "name": "Ham"
+    },
+    {
+        "id": 2,
+        "name": "Pineapple"
+    },
+    {
+        "id": 3,
+        "name": "Bell Pepper"
+    },
+    {
+        "id": 4,
+        "name": "Pork"
+    },
+    {
+        "id": 5,
+        "name": "Chicken"
+    },
+    {
+        "id": 6,
+        "name": "Bacon"
+    },
+    {
+        "id": 7,
+        "name": "Pepperoni"
+    },
+    {
+        "id": 8,
+        "name": "Cheese"
+    },
+    {
+        "id": 9,
+        "name": "BBQ Sauce"
+    },
+    {
+        "id": 10,
+        "name": "Chili"
+    },
+    {
+        "id": 11,
+        "name": "Onions"
+    },
+    {
+        "id": 12,
+        "name": "Vegetables"
+    },
+    {
+        "id": 13,
+        "name": "Bicol Express Sauce"
+    }
+    
+]

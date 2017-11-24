@@ -1,0 +1,29 @@
+<!--TO DO: data bindings for pizzas-->
+<div class="menu-items row no-gutters">
+  <a *ngFor="let menuItem of pizzas" href="javascript:void(0)" class="list-group-item list-group-item-action col-md-3" [id]="menuItem?.id" (click)="pizzaClick(menuItem?.id)">{{ menuItem?.name }}</a>
+</div>
+<div class="size-container row">
+    <mat-radio-group>
+        <mat-radio-button #regularSize value="9" (change)="onSizeClick(regularSize.value)">Regular (9")</mat-radio-button>
+        <mat-radio-button #familySize value="12" (change)="onSizeClick(familySize.value)">Family (12")</mat-radio-button>
+        <mat-radio-button #partySize value="14" (change)="onSizeClick(partySize.value)">Party (14")</mat-radio-button>
+      </mat-radio-group>
+    <!--<div class="form-check col-sm-4">
+      <label class="form-check-label">
+        <input type="radio"  (change)="onSizeClick(regularSize.value)" class="form-check-input" name="sizeOption" #regularSize value="9">
+        Regular (9")
+      </label>
+    </div>
+    <div class="form-check col-sm-4">
+      <label class="form-check-label">
+        <input type="radio" (change)="onSizeClick(familySize.value)" class="form-check-input" name="sizeOption" #familySize value="12">
+        Family (12")
+      </label>
+    </div>
+    <div class="form-check col-sm-4">
+      <label class="form-check-label">
+        <input type="radio" (change)="onSizeClick(partySize.value)" class="form-check-input" name="sizeOption" #partySize value="14">
+        Party (14")
+      </label>
+    </div>-->
+</div>

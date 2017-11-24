@@ -1,0 +1,6 @@
+<div class="shopping-cart-container">
+  <h4 class="shopping-cart-title"><span class="fa fa-shopping-cart"></span> {{title}}</h4>
+  <app-cart-item (orders)="getOrders($event)"  [ngClass]="(!isSummaryShown) ? 'is-visible' : 'is-not-visible'"></app-cart-item>
+  <app-delivery (deliveryFormInfo)="orderNow($event)" [ngClass]="(!isSummaryShown) ? 'is-visible' : 'is-not-visible'"></app-delivery>
+  <app-summary [summaryItems]="orderItems" [customer]="customerInfo" [ngClass]="(isSummaryShown) ? 'is-visible' : 'is-not-visible'"></app-summary>
+</div>

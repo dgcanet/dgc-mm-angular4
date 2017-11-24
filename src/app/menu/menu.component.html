@@ -1,0 +1,6 @@
+<div class="menu-container">
+  <h4><span class="fa fa-file-text"></span> Menu</h4>
+  <app-items [pizzas]="pizzaList" (selectPizza)="showPizza($event)"></app-items>
+  <app-selected-item [shownPizza]="selectedPizza" [ingredients]="allIngredients" ></app-selected-item>
+  <button mat-button mat-fab type="button" (click)="addPizzaToCart($event)"><span class="fa fa-plus"></span> Add</button>
+</div>
